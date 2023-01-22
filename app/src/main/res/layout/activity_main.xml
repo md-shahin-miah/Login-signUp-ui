@@ -161,13 +161,11 @@
                 android:paddingLeft="100dp"
                 android:paddingRight="100dp"
                 android:background="@drawable/back2"
-                android:onClick="signin"
                 android:text="Sign In"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-
                 android:textSize="18sp"
                 android:textStyle="italic"
                 />
