@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".LoginActivity"
     android:background="@drawable/back"
-    tools:context=".LoginActivity">
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -25,8 +25,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="15dp"
             android:layout_marginBottom="10dp"
             android:gravity="center"
             android:text="User Login"
@@ -37,16 +36,21 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="15dp"
-            android:paddingBottom="50dp"
-            android:paddingTop="50dp"
-            android:background="@drawable/sss">
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp"
+            android:background="@drawable/rectangle_shape"
+         >
+
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/filledTextField"
                 android:layout_width="match_parent"
-                android:layout_height="63dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="30dp"
@@ -56,7 +60,7 @@
                 android:textColorHint="#706D6D"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:hint="email"
-                android:padding="10dp"
+                android:padding="5dp"
                 >
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -73,24 +77,25 @@
                 android:id="@+id/filledTextField2"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
-                android:layout_height="63dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginBottom="10dp"
                 android:ems="13"
                 android:inputType="textPassword"
                 android:textColorHint="#706D6D"
                 android:hint="Password"
-                android:padding="10dp"
+                android:padding="5dp"
                 android:layout_below="@+id/filledTextField"
                 >
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textPassword" />
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -130,7 +135,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#142FFC"
-                android:layout_marginLeft="50dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
                 android:text="Remember Password"
                 android:layout_below="@+id/filledTextField2"
@@ -138,27 +143,34 @@
         </RelativeLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="15dp"
             android:layout_marginBottom="10dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
 
-            <Button
+            >
+
+            <TextView
                 android:id="@+id/button"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="100dp"
-                android:layout_marginRight="100dp"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:paddingLeft="100dp"
+                android:paddingRight="100dp"
                 android:background="@drawable/back2"
                 android:onClick="signin"
                 android:text="Sign In"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+
                 android:textSize="18sp"
-                android:textStyle="italic" />
+                android:textStyle="italic"
+                />
         </LinearLayout>
 
         <LinearLayout
@@ -183,7 +195,7 @@
                 android:background="@drawable/circular_background"
                 android:src="@drawable/google"
                 android:padding="5dp"
-                android:layout_marginLeft="6dp"
+                android:layout_marginLeft="8dp"
 
                 />
             <ImageView
@@ -192,7 +204,7 @@
                 android:background="@drawable/circular_background"
                 android:src="@drawable/instagram"
                 android:padding="5dp"
-                android:layout_marginLeft="6dp"
+                android:layout_marginLeft="8dp"
                 />
 
         </LinearLayout>
@@ -221,12 +233,12 @@
                 android:layout_marginTop="5dp"
                 android:gravity="center"
                 android:text="Forgot paassword"
-                android:textColor="#B6A937"
+                android:textColor="#FFEB3B"
                 android:textSize="18sp"
-                android:textStyle="bold" />
+                android:textStyle="normal" />
 
         </LinearLayout>
 
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
